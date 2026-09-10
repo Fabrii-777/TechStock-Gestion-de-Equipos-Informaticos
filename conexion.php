@@ -1,12 +1,11 @@
 <?php
 // Configuración de la base de datos SUPABASE (PostgreSQL)
-// Reemplaza estos datos con los de tu proyecto en Supabase
 
-$host = "db.zejwgocnnunpgbyooxbw.supabase.co"; 
-$port = "5432"; 
-$dbname = "postgres"; 
-$user = "postgres"; 
-$password = "fabri10+100"; 
+$host = "aws-0-us-east-2.pooler.supabase.com"; // <- ¡Usa el host del Transaction Pooler!
+$port = "6543";                                // <- El puerto cambia a 6543
+$dbname = "postgres";
+$user = "postgres.zejwgocnnunpgbyooxbw";       // <- Fíjate en tu panel, a veces le agregan el ID al usuario
+$password = "fabri10+100";
 
 try {
     $dsn = "pgsql:host=$host;port=$port;dbname=$dbname";
@@ -16,4 +15,3 @@ try {
     die("Error de conexión a Supabase: " . $e->getMessage());
 }
 ?>
-
