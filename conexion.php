@@ -2,11 +2,11 @@
 // Configuración de la base de datos SUPABASE (PostgreSQL)
 // Reemplaza estos datos con los de tu proyecto en Supabase
 
-$host = "aws-0-us-east-1.pooler.supabase.com"; 
-$port = "6543"; 
+$host = "db.zejwgocnnunpgbyooxbw.supabase.co"; 
+$port = "5432"; 
 $dbname = "postgres"; 
-$user = "postgres.tu_referencia_de_proyecto"; 
-$password = "TuContrasenaSuperSegura123"; 
+$user = "postgres"; 
+$password = "fabri10+100"; 
 
 try {
     $dsn = "pgsql:host=$host;port=$port;dbname=$dbname";
